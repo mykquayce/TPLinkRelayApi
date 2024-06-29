@@ -1,5 +1,6 @@
 namespace TPLinkRelayApi.Services.Tests;
 
+[Collection(nameof(NonParallelCollectionDefinition))]
 public class NetworkDiscoveryServiceTests(Fixture fixture) : IClassFixture<Fixture>
 {
 	private readonly INetworkDiscoveryService _sut = fixture.NetworkDiscoveryService;

@@ -12,4 +12,8 @@
     <PackageReference Include="Helpers.TPLink" Version="1.5.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TPLinkRelayApi.Models\TPLinkRelayApi.Models.csproj" />
+  </ItemGroup>
+
 </Project>

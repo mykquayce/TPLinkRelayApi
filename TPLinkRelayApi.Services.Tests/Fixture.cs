@@ -22,13 +22,16 @@ public sealed class Fixture : IDisposable, IAsyncDisposable
 				.Services
 			.AddTransient<INetworkDiscoveryService, NetworkDiscoveryService>()
 			.AddTPLink()
+			.AddTransient<IDeviceService, DeviceService>()
 			.BuildServiceProvider();
 
+		DeviceService = _serviceProvider.GetRequiredService<IDeviceService>();
 		NetworkDiscoveryClient = _serviceProvider.GetRequiredService<IClient>();
 		NetworkDiscoveryService = _serviceProvider.GetRequiredService<INetworkDiscoveryService>();
 		TPLinkService = _serviceProvider.GetRequiredService<IService>();
 	}
 
+	public IDeviceService DeviceService { get; }
 	public IClient NetworkDiscoveryClient { get; }
 	public INetworkDiscoveryService NetworkDiscoveryService { get; }
 	public IService TPLinkService { get; }
