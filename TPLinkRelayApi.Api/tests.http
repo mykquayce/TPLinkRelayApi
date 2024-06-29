@@ -1,1 +1,4 @@
-GET http://localhost:5028/weatherforecast/
+@host=http://localhost:5028
+
+#
+GET {{host}}/devices/amp/info
