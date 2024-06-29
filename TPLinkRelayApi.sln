@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLinkRelayApi.Api", "TPLinkRelayApi.Api\TPLinkRelayApi.Api.csproj", "{5132F485-C768-484D-936D-A4792433560F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPLinkRelayApi.Api", "TPLinkRelayApi.Api\TPLinkRelayApi.Api.csproj", "{5132F485-C768-484D-936D-A4792433560F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLinkRelayApi.Api.Tests", "TPLinkRelayApi.Api.Tests\TPLinkRelayApi.Api.Tests.csproj", "{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5132F485-C768-484D-936D-A4792433560F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5132F485-C768-484D-936D-A4792433560F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5132F485-C768-484D-936D-A4792433560F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
