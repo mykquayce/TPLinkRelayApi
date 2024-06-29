@@ -5,7 +5,11 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPLinkRelayApi.Api", "TPLinkRelayApi.Api\TPLinkRelayApi.Api.csproj", "{5132F485-C768-484D-936D-A4792433560F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLinkRelayApi.Api.Tests", "TPLinkRelayApi.Api.Tests\TPLinkRelayApi.Api.Tests.csproj", "{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPLinkRelayApi.Api.Tests", "TPLinkRelayApi.Api.Tests\TPLinkRelayApi.Api.Tests.csproj", "{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLinkRelayApi.Services", "TPLinkRelayApi.Services\TPLinkRelayApi.Services.csproj", "{4A578196-DBBE-42C0-B17B-6AA69FB9105C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLinkRelayApi.Services.Tests", "TPLinkRelayApi.Services.Tests\TPLinkRelayApi.Services.Tests.csproj", "{232BC0E5-348B-4C48-ACAF-0528812D456E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B75DBD4-97E6-4EF1-BC4E-06FADB5A4BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A578196-DBBE-42C0-B17B-6AA69FB9105C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A578196-DBBE-42C0-B17B-6AA69FB9105C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A578196-DBBE-42C0-B17B-6AA69FB9105C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A578196-DBBE-42C0-B17B-6AA69FB9105C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{232BC0E5-348B-4C48-ACAF-0528812D456E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{232BC0E5-348B-4C48-ACAF-0528812D456E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{232BC0E5-348B-4C48-ACAF-0528812D456E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{232BC0E5-348B-4C48-ACAF-0528812D456E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
