@@ -11,7 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPLinkRelayApi.Services", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPLinkRelayApi.Services.Tests", "TPLinkRelayApi.Services.Tests\TPLinkRelayApi.Services.Tests.csproj", "{232BC0E5-348B-4C48-ACAF-0528812D456E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPLinkRelayApi.Models", "TPLinkRelayApi.Models\TPLinkRelayApi.Models.csproj", "{951CB77F-0ADB-49DB-8038-D52D6B718039}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TPLinkRelayApi.Models", "TPLinkRelayApi.Models\TPLinkRelayApi.Models.csproj", "{951CB77F-0ADB-49DB-8038-D52D6B718039}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B01E8115-033A-40D7-9125-D4F9D08E0F71}"
+	ProjectSection(SolutionItems) = preProject
+		build.ps1 = build.ps1
+		docker-compose.yml = docker-compose.yml
+		traefik.yml = traefik.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

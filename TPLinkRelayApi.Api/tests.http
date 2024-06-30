@@ -1,13 +1,10 @@
-@host=http://localhost:5028
-
-#
-GET {{host}}/devices/amp/info
+GET {{HostAddress}}/devices/amp/info
 
 ###
-GET {{host}}/devices/amp/data
+GET {{HostAddress}}/devices/amp/data
 
 ###
-PUT {{host}}/devices/amp/state/false
+PUT {{HostAddress}}/devices/amp/state/false
 
 ###
-PUT {{host}}/devices/amp/state/true
+PUT {{HostAddress}}/devices/amp/state/true
