@@ -32,6 +32,34 @@ public class DevicesController(IDeviceService deviceService, Helpers.TPLink.ISer
 		});
 	}
 
+	[HttpGet("{device:required}/data")]
+	public async Task<IActionResult> GetDeviceData([FromRoute(Name = "device")] string s)
+	{
+		Device device;
+		try { device = await FindDeviceAsync(s); }
+		catch (KeyNotFoundException)
+		{
+			return base.BadRequest(error: new { message = "device not found", });
+		}
+
+		var (amps, volts, watts) = await tpLinkService.GetRealtimeDataAsync(device.IPAddress);
+		return base.Ok(new { amps, volts, watts, });
+	}
+
+	[HttpPut("{device:required}/state/{state:bool}")]
+	public async Task<IActionResult> SetDeviceState([FromRoute(Name = "device")] string s, bool state)
+	{
+		Device device;
+		try { device = await FindDeviceAsync(s); }
+		catch (KeyNotFoundException)
+		{
+			return base.BadRequest(error: new { message = "device not found", });
+		}
+
+		await tpLinkService.SetStateAsync(device.IPAddress, state);
+		return base.Ok();
+	}
+
 	private Task<Device> FindDeviceAsync(string s, CancellationToken cancellationToken = default)
 	{
 		if (IPAddress.TryParse(s, out var ipAddress))
